@@ -1,9 +1,14 @@
 <ion-header>
-  <ion-navbar>
+  <ion-toolbar color="secondary">
+    <ion-buttons start>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="md-arrow-round-back"></ion-icon>
+      </button>
+    </ion-buttons>    
     <ion-title>
       Ionic Blank
     </ion-title>
-  </ion-navbar>
+  </ion-toolbar >
 </ion-header>
 
 <ion-content padding>
@@ -16,4 +21,18 @@
                 [chartType]="lineChartType"
                 (chartHover)="chartHovered($event)"
                 (chartClick)="chartClicked($event)"></canvas>
+  <ion-grid>
+    <ion-row style="text-align: center;">
+      <ion-col> 
+      <div>
+        <ion-icon name="share"></ion-icon>
+      </div>
+      </ion-col>
+      <ion-col>              
+        <div>
+          <ion-icon name="md-add" class="botones"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
